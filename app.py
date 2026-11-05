@@ -40,15 +40,15 @@ model_option = st.sidebar.selectbox(
     ],
 )
 
-# File names created by train.py (inside the model/ folder)
+# UPDATED CODE (Correct paths):
 MODEL_FILES = {
-    "Logistic Regression": "model/logistic_regression.pkl",
-    "Decision Tree": "model/decision_tree.pkl",
-    "KNN": "model/knn.pkl",
-    "Naive Bayes": "model/naive_bayes.pkl",
-    "Support Vector Machine": "model/svm.pkl",
+    "Logistic Regression": "logistic_regression.pkl",
+    "Decision Tree": "decision_tree.pkl",
+    "KNN": "knn.pkl",
+    "Naive Bayes": "naive_bayes.pkl",
+    "Support Vector Machine": "svm.pkl",
 }
-SCALER_FILE = "model/scaler.pkl"
+SCALER_FILE = "scaler.pkl"
 
 # These 3 models were trained on SCALED data, so they need the scaler too.
 NEEDS_SCALING = {"Logistic Regression", "KNN", "Support Vector Machine"}
